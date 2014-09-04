@@ -6,4 +6,9 @@ def make_exponentiater(e):
 
 square = make_exponentiater(2)
 
+def index(req, result):
+    newresult = int(result)
+    return square(result)
+	
+
 # square(4) -- returns 16
