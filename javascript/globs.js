@@ -4,10 +4,10 @@ var scriptloc = "/scripts/"
 
  
 
-function fetchmake_exponentiater()
+function act3_square()
 {
   $.ajax({
-      url: siteloc + scriptloc + "act3_py.py",
+      url: siteloc + scriptloc + "act3_square.py",
       data: {make_exponentiater:make_exponentiater},
       dataType: 'json',
       success: function (res) {
@@ -16,3 +16,14 @@ function fetchmake_exponentiater()
     });
 }
 
+function act3_cube()
+{
+  $.ajax({
+      url: siteloc + scriptloc + "act3_cube.py",
+      data: {make_exponentiater:make_exponentiater},
+      dataType: 'json',
+      success: function (res) {
+                  console.log(res);
+              }
+    });
+}
