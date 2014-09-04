@@ -8,11 +8,12 @@ function act3_square()
 {
   $.ajax({
       url: siteloc + scriptloc + "act3_square.py",
-      data: {make_exponentiater:make_exponentiater},
-      dataType: 'json',
-      success: function (res) {
-                  console.log(res);
-              }
+      data: {result:$("#inputnumber").val(),
+             },
+      success: function (res) { 
+	              $("p").html("<br>");
+                  $("p").append(res); 
+				  }
     });
 }
 
@@ -20,10 +21,11 @@ function act3_cube()
 {
   $.ajax({
       url: siteloc + scriptloc + "act3_cube.py",
-      data: {make_exponentiater:make_exponentiater},
-      dataType: 'json',
-      success: function (res) {
-                  console.log(res);
-              }
+      data: {result:$("#inputnumber").val(),
+             },
+      success: function (res) { 
+	              $("p").html("<br>");
+                  $("p").append(res); 
+				  }
     });
 }
