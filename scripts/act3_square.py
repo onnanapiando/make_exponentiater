@@ -1,18 +1,12 @@
 import math
-
+   
 def make_exponentiater(e):
-    return lambda(x): pow(x,e)
+     return lambda(value):  pow(value,e)
+
+square= make_exponentiater(2)
+ #gets the request
+def index(req, result): 
+      newresult  = int(result)
+      return square(newresult)
 	
-
-square = make_exponentiater(2)
-
-def index(req, result):
-<<<<<<< HEAD
-    result = int(result)
-=======
-    newresult = int(result)
->>>>>>> b6ae296727468f4fe4d3ff15dcba13867f79f433
-    return square(result)
 	
-
-# square(4) -- returns 16
